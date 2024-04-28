@@ -1,0 +1,9 @@
+{{ $file := .Get "file" | readFile }}
+{{ $lang := .Get "language" }}
+{{ if and (.Get "prefix") (.Get "suffix")}}
+{{ $prefix := .Get "prefix" }}
+{{ $suffix := .Get "suffix" }}
+{{ (print "```" $lang "\n" $prefix "\n" $file $suffix "\n```") | markdownify }}
+{{ else }}
+{{ (print "```" $lang "\n" $file "```") | markdownify }}
+{{ end }}

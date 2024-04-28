@@ -1,0 +1,45 @@
+#baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Live Hacking Cloud Architectures Lab"
+theme = "hugo-theme-learn"
+publishDir = "public"
+relativeURLs = "false"
+uglyURLs = "false"
+metaDataFormat = "yaml"
+
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+#we want to render html directly from md:
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+[params]
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "mine"
+  showVisitedLinks = false
+  disableNextPrev = true
+  description = "Resources for Live Hacking Cloud Architectures"
+  author = "Thorsten Jakoby"
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-info-circle'></i>  Novatec"
+url = "https://www.novatec-gmbh.de/"
+weight = 10
+
+[[menu.shortcuts]] 
+name = "<i class='fab fa-twitter'></i>  Twitter"
+url = "https://twitter.com/novatecgmbh"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-bullhorn'></i>  Impressum"
+url = "https://www.novatec-gmbh.de/impressum/"
+weight = 30
