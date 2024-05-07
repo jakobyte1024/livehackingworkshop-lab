@@ -1,6 +1,6 @@
 +++
 title = "K8s Access"
-weight = 9
+weight = 50
 chapter = true
 +++
 

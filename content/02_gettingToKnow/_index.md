@@ -1,6 +1,6 @@
 +++
 title = "Getting To Know"
-weight = 6
+weight = 20
 chapter = true
 +++
 
