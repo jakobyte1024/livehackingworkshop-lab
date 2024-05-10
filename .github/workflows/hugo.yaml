@@ -37,6 +37,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+            repository: matcornic/hugo-theme-learn
+            path: themes/
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Pages

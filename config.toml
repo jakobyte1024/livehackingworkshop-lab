@@ -9,7 +9,6 @@ relativeURLs = "false"
 uglyURLs = "false"
 metaDataFormat = "yaml"
 
-
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
