@@ -14,11 +14,11 @@ In other words: "bridge" between a development environment and production enviro
 That's why toolchain technologies are a interesting target for us.
 
 There are numerous CI/CD technologies available.
-You'll see a widely used stack in the following picture.
+In the picture below, you'll find some popular technologies.
+As an attacker, imagine you could be part of the horizontal flow.
+You'd have access to the code and even to the cloud envioronment.
 
-...
+![SDLC Toolchain](https://miro.medium.com/v2/resize:fit:720/format:webp/1*aEK90rtoC5KJdocGQlEHZA.gif)
+Let's think about possible attack technologies to scan for more enumeration.
 
-TODO
-erkläre als gateway zu allem
-viele bekannte lücken
-gutes ziel
+Follow the steps in this chapter

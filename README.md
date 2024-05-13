@@ -5,6 +5,8 @@
 * 
 
 
-# build
+# local run
 
-* install theme
+```bash
+hugo -v server
+```

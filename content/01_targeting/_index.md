@@ -16,7 +16,4 @@ First of all, we must identify potential systems.
 A good starting point is to scan their domain.
 There's a fair chance, that DNS structure will provide information for us.
 
-Steps in this chapter:
-
-- [The Target](/01_targeting/01_nevervictimconsult/)
-- [DNS Enumeration](/01_targeting/02_dnsEnumeration/)
+Follow the steps in this chapter
