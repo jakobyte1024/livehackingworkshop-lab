@@ -106,6 +106,6 @@ kubectl logs -n kube-system -l app.kubernetes.io/name=tetragon -c export-stdout 
 ```
 
 You will see something like this in the logs:
-![tetragon logs](https://raw.githubusercontent.com/jakobyte1024/livehackingtalk-demo/main/walkthrough/images/tetragonLogs.png)
+![tetragon logs](/images/tetragon_logs.png)
 
 {{% /expand %}}
