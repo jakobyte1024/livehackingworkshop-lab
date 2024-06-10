@@ -10,5 +10,6 @@ About this workshop
 
 Steps in this chapter:
 
-- [The Talk](/00_intro/01_theTalk/)
+- [Welcome](/00_intro/01_welcome/)
 - [The Setup](/00_intro/02_theSetup/)
+- [The Talk](/00_intro/03_theTalk/)
