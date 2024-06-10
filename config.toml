@@ -1,6 +1,7 @@
-#baseURL = "/"
+baseURL = "//jakobyte1024.github.io/livehackingworkshop-lab"
 languageCode = "en-US"
 defaultContentLanguage = "en"
+canonifyURLs = true
 
 title = "Live Hacking Cloud Architectures Lab"
 theme = "hugo-theme-learn"

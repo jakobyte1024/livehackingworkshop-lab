@@ -1,6 +1,6 @@
 ---
 title: The Setup
-weight: 7
+weight: 6
 ---
 
 
