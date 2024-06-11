@@ -7,7 +7,7 @@ weight: 61
 
 [Tetragon](https://tetragon.io/) has been deployed as a defending tool. It's a kubernetes-aware security observabilty and runtime enforcement tool which is eBPF-based. It enables defining and applying policies and filtering on the OS kernel level at runtime.
 
-![Tetragon](https://tetragon.io/images/diagram-illustration.png)
+![Tetragon](/images/tetragon.png)
 
 ## Tracing-Policy
 

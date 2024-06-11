@@ -7,9 +7,9 @@ Now let's try to play both roles of attacker and defender on prod environment!
 
 ## Getting Jenkins Login Attempts
 
-As we mentioned previously, ingress-nginx has been deployed infront of jenkins to log the traffic on the prod environment.
+As we mentioned previously, ingress-nginx has been deployed in front of jenkins to log the traffic on the prod environment.
 
-Play the role of the defender and after accessing the K8s cluster on your terminal, switch to the prod cluster:
+Now play the role of the defender and after accessing the K8s cluster on your terminal, switch to the prod cluster:
 {{% expand "Solution" %}}
 
 ```bash
@@ -24,6 +24,9 @@ Now watch the logs of the ingress pod on your terminal, which is deployed on the
 
 ```bash
 kubectl get pod -n ingress-nginx
+```
+
+```bash
 kubectl logs <Ingress-Controller-Pod-Name> -f -n ingress-nginx
 ```
 
@@ -33,13 +36,25 @@ At the same time as you are getting the logs of ingress as a defender, on anothe
 
 Now as a defender you will get all the login attempts this time in your ingress logs.
 
+Well in real-world scenarios this should ideally be connected to a SIEM system, where you gather the logs and events from your resources and get notified about such security threats.
+
 ## Preventing Receiving K8s Pod TCP Traffic Passively
 
-Now as the attacker after accessing the K8s Cluster, switch to the prod environment using octant:
+Now as an attacker, switch to the prod environment after accessing the K8s Cluster either using octant or the command line:
+
+{{% expand "Solution" %}}
 
 ```bash
 octant
 ```
+
+or
+
+```bash
+gcloud container clusters get-credentials --region=europe-west3 conduit-k8s-prod
+```
+
+{{% /expand %}}
 
 You will try to passively receive all TCP traffic sent to the conduit-backend container in order to analyse it and make use of it later on.
 In order to do that, you need to inject a sidecar container in the app pod, which captures all TCP traffic passing through the pod's network interface and saves the received network traffic into a file.
@@ -61,7 +76,7 @@ In order to save sometime, a docker image using that file has already been built
 mirna/sidecar:0.9
 ```
 
-All you need now as the attacker is to edit the app deployment either on browser directly opened after using octant or using the command line:
+All you need now as an attacker is to edit the app deployment either on browser directly opened after using octant or using the command line:
 
 {{% expand "Solution" %}}
 
@@ -71,7 +86,7 @@ kubectl edit deployment/conduit-backend -n conduit-app
 
 {{% /expand %}}
 
-Then jnject the sidecar container, directly below containers on column 0:
+Then inject the sidecar container, directly below containers on column 0:
 {{% expand "Solution" %}}
 
 ```bash
@@ -83,7 +98,7 @@ Then jnject the sidecar container, directly below containers on column 0:
 
 The new container will not be deployed properly, since a SigKill will be sent to end that process from the [tetragon policy]({{< ref "/05_defend/01_tetragon" >}}) that the security departement defined before.
 
-Now as the defender check the status of the app pods. What do you notice?
+Now as a defender check the status of the app pods. What do you notice?
 {{% expand "Solution" %}}
 
 ```bash
