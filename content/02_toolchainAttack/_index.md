@@ -7,11 +7,11 @@ chapter = true
 # Toolchain Attack
 
 A toolchain often comes up with various technologies with the aim to support software development projects.
-Very often, this technologies are open source software.
+Very often, these technologies are open source software.
 
 With the concept of [CI/CD](https://en.wikipedia.org/wiki/CI/CD), those technologies can be understood as "bridge" between development teams and end user.
-In other words: "bridge" between a development environment and production environment. Production environment - that's where our data of interest lifes.
-That's why toolchain technologies are a interesting target for us.
+In other words: "bridge" between a development environment and production environment. Production environment - that's where our data of interest lives.
+That's why toolchain technologies are an interesting target for us.
 
 There are numerous CI/CD technologies available.
 In the picture below, you'll find some popular technologies.
