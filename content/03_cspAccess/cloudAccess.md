@@ -3,8 +3,8 @@ title: Cloud Service Provider Access
 weight: 41
 ---
 
-Now what would you do when you have just stolen a secret?!
-Of course that looks promising to get access to a service provider.
+Now what would you do when you have just found a secret?
+Of course that looks promising to get access to a service provider!
 
 Let's use the revealed secret in order to login to GCP!
 
@@ -20,15 +20,24 @@ gcloud init --console-only
 
 {{% /expand %}}
 
-It will ask for the service account and the project name. Use the jenkins account and the project name "thorsten-jakoby-tj-projekt".
+It will ask for some info. For the configuration you can reuse the first session, for the account you may use the jenkins account and for the project name you can use "thorsten-jakoby-tj-projekt".
 
 Now that you are in, you have the opportunity to have a look around!
 
-Let's see whether they have some Kubernetes clusters and storage buckets:
+Let's see whether they have some container clusters:
 {{% expand "Solution" %}}
 
 ```bash
 gcloud container clusters list
+```
+
+{{% /expand %}}
+
+Maybe also some storage buckets
+
+{{% expand "Solution" %}}
+
+```bash
 gcloud storage buckets list
 ```
 
