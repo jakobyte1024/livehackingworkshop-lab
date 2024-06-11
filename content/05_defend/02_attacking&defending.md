@@ -13,7 +13,7 @@ Now play the role of the defender and after accessing the K8s cluster on your te
 {{% expand "Solution" %}}
 
 ```bash
-gcloud container clusters get-credentials --region=europe-west3 conduit-k8s-prod
+gcloud container clusters get-credentials --region=europe-west3-c conduit-k8s-prod
 ```
 
 {{% /expand %}}
@@ -51,7 +51,7 @@ octant
 or
 
 ```bash
-gcloud container clusters get-credentials --region=europe-west3 conduit-k8s-prod
+gcloud container clusters get-credentials --region=europe-west3-c conduit-k8s-prod
 ```
 
 {{% /expand %}}

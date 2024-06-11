@@ -6,7 +6,7 @@ chapter = true
 
 # Targeting
 
-We expect valueable information at Nevervictimconsult.
+We expect valuable information at Nevervictimconsult.
 As of now, we don't know much about the company nor about their systems.
 Based on their blog, we only know, that they may have transformed something to a public cloud.
 

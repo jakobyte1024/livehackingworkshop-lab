@@ -15,22 +15,72 @@ But actually, we need to plan this.
 
 Let's start with imagining the typical way of interacting with Jenkins:
 Users (most often developers) open Jenkins WebUI in their favourite Webbrowser.
-
-Once opened, they login with a username and password combination.
-That would be the best, wouldn't it ? Having a valid combination.
-Unfortunately we don't.
-
-# Jenkins Anatomy
-
-Versions, Java, Plugins
+Once open, they login with a username and password combination.
+That would be best, wouldn't it? Having a valid combination.
+Unfortunately we don't have it.
 
 # Scan Jenkins Instance
 
+Let's start by getting some details about jenkins. In order to do that, let's use [metasploit](https://www.metasploit.com/):
 
-metasploit
-endpoints
+{{% expand "Solution" %}}
+
+```bash
+msfconsole
+```
+
+{{% /expand %}}
+
+Now we can use an enumeration module for jenkins provided by metasploit as a scanner for http-based applications:
+
+{{% expand "Solution" %}}
+
+```bash
+use auxiliary/scanner/http/jenkins_enum
+```
+
+{{% /expand %}}
+
+Now we need to configure that module, setting the RHOST, RPORT and TARGETURI and then try to exploit:
+
+{{% expand "Solution" %}}
+
+```bash
+set RHOSTS jenkins.test.nevervictimconsult.xyz
+set RPORT 80
+set TARGETURI /
+```
+
+```bash
+exploit
+```
+
+{{% /expand %}}
+
+What do you see?
+
+{{% expand "Solution" %}}
+We detect that theres a pretty modern version of Jenkins running.
+
+```bash
+[+] 34.159.77.191:80    - Jenkins Version 2.387.3
+[*] /script restricted (403)
+[*] /view/All/newJob restricted (403)
+[*] /asynchPeople/ restricted (403)
+[*] /systemInfo restricted (403)
+```
+
+{{% /expand %}}
 
 # Look for exploits
 
+Well that makes it more difficult for us to get access. However, we can make use of metasploit to search for exploits for that version:
+{{% expand "Solution" %}}
 
-searchsploit 
+```bash
+searchsploit Jenkins 2.3
+```
+
+{{% /expand %}}
+
+Unfortunately there are no easy-to-use exploits available for this version, but we can still use other modules! Let's use the login module.
