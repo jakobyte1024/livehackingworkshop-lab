@@ -9,7 +9,7 @@ weight: 61
 
 ![Tetragon](https://tetragon.io/images/diagram-illustration.png)
 
-## Tracing Policy
+## Tracing-Policy
 
 By default tetragon observes the process lifecycle (execution and termination), however this could be extended for more custom and advanced use cases using Tracing Policies.
 
