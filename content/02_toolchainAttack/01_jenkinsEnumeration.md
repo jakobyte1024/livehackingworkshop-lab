@@ -13,8 +13,9 @@ That's what we'll try to cover in this chapter.
 Sounds like it's that easy.
 But actually, we need to plan this.
 
-Let's start with imagine the typical way of interacting with Jenkins:
+Let's start with imagining the typical way of interacting with Jenkins:
 Users (most often developers) open Jenkins WebUI in their favourite Webbrowser.
+
 Once opened, they login with a username and password combination.
 That would be the best, wouldn't it ? Having a valid combination.
 Unfortunately we don't.
@@ -25,9 +26,11 @@ Versions, Java, Plugins
 
 # Scan Jenkins Instance
 
+
 metasploit
 endpoints
 
 # Look for exploits
 
-searchsploit
+
+searchsploit 
