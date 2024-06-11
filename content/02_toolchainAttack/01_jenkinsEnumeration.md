@@ -26,11 +26,9 @@ Versions, Java, Plugins
 
 # Scan Jenkins Instance
 
-
 metasploit
 endpoints
 
 # Look for exploits
 
-
-searchsploit 
+searchsploit
