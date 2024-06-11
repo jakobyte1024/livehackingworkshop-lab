@@ -81,7 +81,7 @@ Then jnject the sidecar container, directly below containers on column 0:
 
 {{% /expand %}}
 
-The new container will not be deployed properly, since a SigKill will be sent to end that process from the [tetragon policy]({{< ref "/05_defend/01_tetragon/#tracing-policy" >}}) that the security departement defined before.
+The new container will not be deployed properly, since a SigKill will be sent to end that process from the [tetragon policy]({{< ref "/05_defend/01_tetragon" >}}) that the security departement defined before.
 
 Now as the defender check the status of the app pods. What do you notice?
 {{% expand "Solution" %}}

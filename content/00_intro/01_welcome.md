@@ -8,7 +8,7 @@ weight: 5
 
 Welcome to the lab!
 
-
+[Lab VM connections](https://docs.google.com/spreadsheets/d/1BXYBa9JKk4eUD0lIeWPEyK8T0CovvsMxwbmpYJ0tobY/edit?usp=sharing)
 
 Here you'll find information about "getting started into the lab".
 
