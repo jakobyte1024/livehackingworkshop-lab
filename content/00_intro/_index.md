@@ -6,10 +6,9 @@ chapter = true
 
 # Intro
 
-About this workshop
+Please follow the agenda led by the instructors.
+There is an intention of a flow in this workshop, which will break terribly if you're not part of the group's progress :-)
 
-Steps in this chapter:
+For example,, there's no advantage in access this page or VM's earlier - only disadvantage for your lab colleagues.
 
-- [Welcome](/00_intro/01_welcome/)
-- [The Setup](/00_intro/02_theSetup/)
-- [The Talk](/00_intro/03_theTalk/)
+Get started with [Welcome](/00_intro/01_welcome/)
