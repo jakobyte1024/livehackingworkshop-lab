@@ -51,3 +51,14 @@ The base image is public available here:
 
 Many steps will come with a *Solution* expand field.
 You should decide on your own if you want to find out the solution yourself or see our attempts.
+
+## Quick access
+
+Short URL: **<https://t.ly/1T_Ja>**
+![thisPage](/images/qr-code.png)
+
+[Lab VM connections](https://docs.google.com/spreadsheets/d/1BXYBa9JKk4eUD0lIeWPEyK8T0CovvsMxwbmpYJ0tobY/edit?usp=sharing)
+
+Here you'll find information about "getting started into the lab".
+
+This lab guide stays open source. You can guide with some setup yourself.
